@@ -11,10 +11,10 @@ namespace Palindrom
 {
     class Program
     {
-        private static int createPalindrome(int firstHalf)
+        private static int createPalindrome(int half)
         {
-            char[] reversed = firstHalf.ToString().Reverse().ToArray();
-            return Convert.ToInt32(firstHalf + new string(reversed));
+            char[] reversed = half.ToString().Reverse().ToArray();
+            return Convert.ToInt32(half + new string(reversed));
         }
 
         static void Main(string[] args)
